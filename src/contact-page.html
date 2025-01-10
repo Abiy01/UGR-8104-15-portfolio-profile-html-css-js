@@ -5,43 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <main>
-        <section>
-            <article>
-                <header>
-                    <h2>Contact Me</h2>
+<body class="contact-body">
+    <nav class="c-nav">
+        <a href="#"><img src="images/logo.png" class="logo" alt="logo"></a>
+        <ul id="sidemenu">
+            <li><a href="../home-page.html">Home</a></li>
+            <li><a href="about-page.html">About</a></li>
+            <li><a href="resume-page.html">Resume</a></li>
+            <li><a href="portfolio-page.html">Portfolio</a></li>
+            <li><a href="contact-page.html">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <main class="contact-main">
+        <section class="contact-links-section">
+            <article class="contact-links-article">
+                <header class="contact-header">
+                    <h2 class="contact-heading">Contact me</h2>
                 </header>
-                <ul>
-                    <li><a href="https://t.me/its_f_h_y" target="_blank"><i class="fa-brands fa-telegram"></i> Telegram</a></li>
-                    <li><a href="https://www.linkedin.com/in/abiy-aragie-0bb586308/" target="_blank"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-                    <li><a href="https://www.instagram.com/_ab_iy_/" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                <ul class="social-links">
+                    <li><a href="https://t.me/its_f_h_y" target="_blank" class="social-link"><i class="fa-brands fa-telegram"></i> Telegram</a></li>
+                    <li><a href="https://www.linkedin.com/in/abiy-aragie-0bb586308/" target="_blank" class="social-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="https://www.instagram.com/_ab_iy_/" target="_blank" class="social-link"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
                 </ul>
             </article>
         </section>
-        <section>
-            <article>
-                <form>
-                    <fieldset>
-                        <legend>Contact Form</legend>
-                        <label for="name">Your Name</label>
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+        <section class="contact-form-section">
+            <article class="contact-form-article">
+                <form class="contact-form">
+                    <fieldset class="contact-fieldset">
+                        <legend class="contact-legend">Contact Form</legend>
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Name" required>
                         
-                        <label for="email">Your Email</label>
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Email" required>
                         
-                        <label for="message">Your Message</label>
-                        <textarea id="message" name="message" rows="6" placeholder="Your Message"></textarea>
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-textarea" rows="6" placeholder="Message"></textarea>
                         
-                        <button type="submit">Submit</button>
+                        <button type="submit" class="form-button">Submit</button>
                     </fieldset>
                 </form>
             </article>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Abiy Aragie Portfolio Website. All rights reserved.</p>
+    <footer class="contact-footer">
+        <p class="footer-text">&copy; 2024 Abiy Aragie Portfolio Website. All rights reserved.</p>
     </footer>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>

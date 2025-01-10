@@ -1,0 +1,644 @@
+/* CSS for home page */
+
+*{
+     margin: 0;
+     padding: 0;
+     font-family: 'poppins', sans-serif;
+     box-sizing: border-box;
+}
+
+body{
+     background: #080808;
+     color: #fff;
+}
+
+#header {
+     width: 100%;
+     height: 100vh;
+     background-image: url(../images/background.png);
+     background-size: cover;
+     background-position: center;
+}
+
+.container{
+     padding: 10px 10%;
+}
+
+nav{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
+
+.logo{
+     width: 140px;
+}
+
+nav ul li{
+     display: inline-block;
+     list-style: none;
+     margin: 10px 20px;
+}
+
+nav ul li a{
+     color: white;
+     text-decoration: none;
+     font-size: 18px;
+     position: relative;
+}
+
+nav ul li a::after{
+     content: '';
+     width: 0;
+     height: 3px;
+     background: #ff004f;
+     position: absolute;
+     left: 0;
+     bottom: -6px;
+     transition: 0.5s;
+}
+
+nav ul li a:hover::after{
+     width: 100%;
+
+}
+
+.header-text{
+     margin-top: 20%;
+     font-size: 30px;
+}
+
+.header-text h1{
+     font-size: 60px;
+     margin-top: 20px;
+}
+
+.header-text h1 span{
+     color: #ff004f;
+}
+
+/* CSS for the audio */
+
+audio::-webkit-media-controls-panel{
+     background-color: white;
+ }
+ audio::-webkit-media-controls-play-button{
+     background-color: #ff004f;
+     border-radius: 50%;
+ }
+ audio::-webkit-media-controls-current-time-display{
+     color: #080808;
+ }
+ audio::-webkit-media-controls-time-remaining-display{
+     color: #080808;
+ }
+ audio::-webkit-media-controls-timeline{
+     border-radius: 40px;
+     background-color: #ff004f;
+ }
+
+ audio::-webkit-media-controls-mute-button{
+     background-color: #ff004f;
+     border-radius: 50%;
+ }
+
+/* CSS for about page */
+
+#about{
+   padding: 80px 0;
+   color: #ababab;
+}
+
+.a-nav{
+     padding: 10px 10%;
+ }
+
+.row{
+     display: flex;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
+
+.about-col-1{
+     flex-basis: 35%;
+}
+
+.about-col-1 img{
+     width: 100%;
+     border-radius: 15px;
+}
+
+.about-col-2{
+     flex-basis: 60%;
+
+}
+
+.sub-title{
+     font-size: 50px;
+     font-weight: 600;
+     color: white;
+}
+
+.tab-titles{
+     display: flex;
+     margin: 20px 0 40px;
+}
+
+.tab-links{
+     margin-right: 50px;
+     font-size: 18px;
+     font-weight: 500;
+     cursor: pointer;
+     position: relative;
+}
+
+.tab-links::after{
+     content: '';
+     width: 0;
+     height: 3px;
+     background: #ff004f;
+     position: absolute;
+     left: 0;
+     bottom: -8px;
+     transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+     width: 50%;
+}
+
+.tab-contents ul li{
+     list-style: none;
+     margin: 10px 0;
+}
+
+.tab-contents span{
+     color: #b54769;
+     font-size: 14px;
+}
+
+.tab-contents{
+     display: none;
+}
+
+.tab-contents.active-tab{
+     display: block;
+}
+
+/* CSS for resume page */
+
+.r-nav{
+     padding: 10px 10%;
+ }
+
+    .r-body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Poppins', sans-serif;
+     background-color: #080808;
+     color: #fff;
+     line-height: 1.8;
+ }
+
+ .r-header {
+     text-align: center;
+     margin-top: 40px;
+ }
+
+ .r-header-title {
+     font-size: 50px;
+     font-weight: 700;
+     color: #fff;
+     margin-bottom: 10px;
+ }
+
+ .r-header-subtitle {
+     font-size: 1rem;
+     color: #aaa;
+ }
+
+ .r-section {
+     max-width: 900px;
+     margin: 40px auto;
+     padding: 30px;
+     background-color: #0f0f0f;
+     border-radius: 10px;
+     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+ }
+
+ .r-section-header {
+     font-size: 1.5rem;
+     color: #ff004f;
+     margin-bottom: 15px;
+     font-weight: 600;
+ }
+
+ .r-section-content {
+     font-size: 1rem;
+     color: #ccc;
+ }
+
+ .r-section-content ul {
+     list-style: none;
+     padding: 0;
+ }
+
+ .r-section-content li {
+     margin: 10px 0;
+     position: relative;
+     padding-left: 20px;
+     color: #fff;
+ }
+
+ .r-section-content li::before {
+     content: '•';
+     position: absolute;
+     left: 0;
+     color: #ff004f;
+     font-size: 1.5rem;
+ }
+
+ .r-button-container {
+     text-align: center;
+     margin-top: 30px;
+ }
+
+ .r-button {
+     display: inline-block;
+     padding: 15px 30px;
+     background-color: #ff004f;
+     color: #fff;
+     font-size: 1rem;
+     text-transform: uppercase;
+     text-decoration: none;
+     border-radius: 5px;
+     transition: background-color 0.3s;
+     font-weight: 600;
+     margin-bottom: 30px;
+ }
+
+ .r-button:hover {
+     font-size: 1.05rem;
+ }
+
+ /* CSS for portfolio page */
+
+ .p-nav{
+     padding: 10px 10%;
+ }
+
+#portfolio{
+     padding: 50px 0;
+}
+
+.work-list{
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+     grid-gap: 40px;
+     margin-top: 50px;
+}
+
+.work{
+     border-radius: 10px;
+     position: relative;
+     overflow: hidden;
+}
+
+.work img{
+     width: 100%;
+     border-radius: 10px;
+     display: block;
+     transition: transform 0.5s;
+
+}
+
+.layer{
+     width: 100%;
+     height: 0;
+     background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+     border-radius: 10px;
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     overflow: hidden;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     padding: 0 40px;
+     text-align: center;
+     font-size: 14px;
+     transition: height 0.5s;
+}
+
+.layer h3{
+     font-weight: 500;
+     margin-bottom: 20px;
+}
+
+.layer a{
+     margin-top: 20px;
+     color: #ff004f;
+     text-decoration: none;
+     font-size: 18px;
+     line-height: 60px;
+     background: #fff;
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     text-align: center;
+
+}
+
+.work:hover img{
+     transform: scale(1.1);
+}
+
+.work:hover .layer{
+     height: 100%;
+}
+
+.btn{
+     display: block;
+     margin: 50px auto;
+     width: fit-content;
+     border: 1px solid #ff004f;
+     padding: 14px 50px;
+     border-radius: 6px;
+     text-decoration: none;
+     color: white;
+     transition: background 0.5s;
+}
+
+.btn:hover{
+     background: #ff004f;
+}
+
+/* CSS for contact page */
+
+.c-nav{
+     padding: 10px 10%;
+ }
+
+body.contact-body {
+     margin: 0;
+     font-family: Arial, sans-serif;
+     background-color: #000;
+     color: #fff;
+     display: flex;
+     flex-direction: column;
+     min-height: 100vh;
+ }
+ 
+
+ .contact-main {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     padding: 40px;
+     flex: 1;
+ }
+ 
+
+ .contact-links-section {
+     flex: 1;
+     max-width: 30%;
+     padding: 20px;
+ }
+ 
+ .contact-links-article {
+     text-align: left;
+ }
+ 
+ .contact-header {
+     margin-bottom: 30px;
+ }
+ 
+ .contact-heading {
+     font-size: 60px;
+     color: #fff;
+     font-weight: bold;
+ }
+ 
+ .social-links {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     margin-left: 100px;
+     margin-top: 50px;
+     font-size: 50px;
+     color: #ff004f;
+ }
+ 
+ .social-link {
+     color: #fff;
+     text-decoration: none;
+     font-size: 25px;
+     margin-bottom: 20px;
+     display: inline-block;
+     transition: color 0.6s ease;
+     color: #ff004f;
+ }
+ 
+ .social-link:hover {
+     font-size: 30px;
+ }
+ 
+
+
+ .contact-form-section {
+     flex: 2;
+     max-width: 60%;
+     padding: 20px;
+     text-align: left;
+ }
+ 
+ .contact-form {
+     background-color: #222;
+     padding: 30px;
+     border-radius: 10px;
+ }
+ 
+ .contact-fieldset {
+     border: none;
+     padding: 0;
+ }
+ 
+ .contact-legend {
+     font-size: 0;
+     color: transparent;
+ }
+ 
+ .form-label {
+     display: block;
+     margin-bottom: 10px;
+     font-size: 14px;
+     color: #fff;
+ }
+ 
+ .form-input, .form-textarea {
+     width: 100%;
+     padding: 15px;
+     margin-bottom: 20px;
+     border: 1px solid #555;
+     border-radius: 6px;
+     background-color: #333;
+     color: #fff;
+     font-size: 16px;
+ }
+ 
+ .form-textarea {
+     height: 150px;
+     resize: none;
+ }
+ 
+ .form-button {
+     background-color: #ff004f;
+     color: #fff;
+     border: none;
+     padding: 15px 30px;
+     border-radius: 6px;
+     font-size: 18px;
+     cursor: pointer;
+     transition: background-color 0.3s ease;
+     display: block;
+     margin: 0 auto;
+ }
+ 
+ .form-button:hover {
+     font-size: 20px;
+ }
+ 
+
+ .contact-footer {
+     text-align: center;
+     padding: 15px;
+     background-color: #111;
+     margin-top: auto;
+ }
+ 
+ .footer-text {
+     color: #fff;
+     font-size: 14px;
+ }
+ 
+ 
+/* Making The Website Responsive */
+
+nav .fa-solid{
+     display: none;
+}
+
+@media only screen and (max-width: 810px){
+     #header{
+          background-image: url(../images/phone-background.png);
+     }
+
+     .header-text{
+          margin-top:100%;
+          font-size:16px;
+     }
+
+     .header-text h1{
+          font-size:30px;
+     }
+
+     nav .fa-solid{
+          display: block;
+          font-size: 25px;
+     }
+
+     nav ul{
+          background: #ff004f;
+          position: fixed;
+          top: 0;
+          right: -200px;
+          width: 200px;
+          height: 100vh;
+          padding-top: 50px;
+          z-index: 2;
+          transition: right 0.5s;
+     }
+
+     nav ul li{
+          display: block;
+          margin: 25px;
+     }
+
+     nav ul .fa-solid{
+          position: absolute;
+          top: 25px;
+          left: 25px;
+          cursor: pointer;
+     }
+
+     .sub-title{
+          font-size: 40px;
+     }
+
+     .about-col-1, .about-col-2{
+          flex-basis: 100%;
+     }
+
+     .about-col-1{
+          margin-bottom: 30px;
+     }
+
+     .about-col-2{
+          font-size: 14px;
+     }
+
+     .tab-links{
+          font-size: 16px;
+          margin-right: 20px;
+     }
+
+     .contact-main {
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+      }
+  
+      .contact-links-section,
+      .contact-form-section {
+          width: 100%;
+          margin-left: 150px;
+      }
+  
+      .contact-links-article,
+      .contact-form-article {
+          padding: 10px;
+      }
+  
+      .social-links {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+         
+          
+      }
+  
+      .social-link {
+          font-size: 1rem;
+          
+      }
+  
+      .contact-form {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          
+      }
+  
+      .form-input,
+      .form-textarea,
+      .form-button {
+          width: 100%;
+      }
+
+      .contact-heading{
+          font-size: 40px;
+      }
+  
+}
