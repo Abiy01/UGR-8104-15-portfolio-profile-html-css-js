@@ -4,66 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
-<body>
-    <header>
-        <h1>My Resume</h1>
+<body class="r-body">
+    <nav class="r-nav">
+        <a href="#"><img src="images/logo.png" class="logo" alt="logo"></a>
+        <ul id="sidemenu">
+            <li><a href="../home-page.html">Home</a></li>
+            <li><a href="about-page.html">About</a></li>
+            <li><a href="resume-page.html">Resume</a></li>
+            <li><a href="portfolio-page.html">Portfolio</a></li>
+            <li><a href="contact-page.html">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <header class="r-header">
+        <h1 class="r-header-title">My Resume</h1>
+        <p class="r-header-subtitle">Video Editor & Thumbnail Designer</p>
     </header>
+
     <main>
-        <section>
-            <header>
-                <h2>About Me</h2>
-            </header>
-            <p>
+        <section class="r-section">
+            <h2 class="r-section-header">About Me</h2>
+            <p class="r-section-content">
                 Hi, I’m Abiy Aragie, a creative Video Editor and Thumbnail Designer with a passion for crafting visually compelling content that engages audiences. 
                 Currently pursuing a degree in Software Engineering at Addis Ababa Institute of Technology, I combine artistic creativity with technical expertise to 
                 deliver impactful visuals.
             </p>
         </section>
 
-        <section>
-            <header>
-                <h2>Experience Highlights</h2>
-            </header>
-            <ul>
-                <li>Senior Video Editor for the Etubers YouTube channel, producing polished edits that attracted high viewership.</li>
-                <li>Thumbnail Designer for Yonas Moh’s YouTube videos, creating click-worthy designs that boosted audience interest.</li>
-            </ul>
+        <section class="r-section">
+            <h2 class="r-section-header">Experience Highlights</h2>
+            <div class="r-section-content">
+                <ul>
+                    <li>Senior Video Editor for the Etubers YouTube channel, producing polished edits that attracted high viewership.</li>
+                    <li>Thumbnail Designer for Yonas Moh’s YouTube videos, creating click-worthy designs that boosted audience interest.</li>
+                </ul>
+            </div>
         </section>
 
-        <section>
-            <header>
-                <h2>Education</h2>
-            </header>
-            <ul>
-                <li>
-                    <strong>Bachelor’s in Software Engineering</strong> (Ongoing), Addis Ababa Institute of Technology (AAiT), GPA: 3.8.
-                </li>
-                <li>
-                    Completed a CapCut Video Editing Course on Udemy, gaining advanced skills in video editing and thumbnail design.
-                </li>
-            </ul>
+        <section class="r-section">
+            <h2 class="r-section-header">Education</h2>
+            <div class="r-section-content">
+                <ul>
+                    <li><strong>Bachelor’s in Software Engineering</strong> (Ongoing), Addis Ababa Institute of Technology (AAiT), GPA: 3.8.</li>
+                    <li>Completed a CapCut Video Editing Course on Udemy, gaining advanced skills in video editing and thumbnail design.</li>
+                </ul>
+            </div>
         </section>
 
-        <section>
-            <header>
-                <h2>Skills</h2>
-            </header>
-            <ul>
-                <li>Video Editing: Proficient in color grading, transitions, motion effects, and using tools like Adobe and CapCut.</li>
-                <li>Thumbnail Design: Skilled in graphic design, logo creation, and crafting eye-catching visuals using Canva.</li>
-            </ul>
+        <section class="r-section">
+            <h2 class="r-section-header">Skills</h2>
+            <div class="r-section-content">
+                <ul>
+                    <li>Video Editing: Proficient in color grading, transitions, motion effects, and using tools like Adobe and CapCut.</li>
+                    <li>Thumbnail Design: Skilled in graphic design, logo creation, and crafting eye-catching visuals using Canva.</li>
+                </ul>
+            </div>
         </section>
 
-        <section>
-            <header>
-                <h2>Let’s Collaborate</h2>
-            </header>
-            <p>Explore my work and connect with me to bring innovative, creative projects to life!</p>
+        <section class="r-section">
+            <h2 class="r-section-header">Let’s Collaborate</h2>
+            <p class="r-section-content">
+                Explore my work and connect with me to bring innovative, creative projects to life!
+            </p>
         </section>
     </main>
-    <footer>
-        <a href="files/resume.pdf" download="resume.pdf" target="_blank">Download CV</a>
+
+    <div class="r-button-container">
+        <a class="r-button" href="files/resume.pdf">Download Resume</a>
+    </div>
+
+    <footer class="contact-footer">
+        <p class="footer-text">&copy; 2024 Abiy Aragie Portfolio Website. All rights reserved.</p>
     </footer>
+
+    <script src="js/script.js"></script>
+
 </body>
 </html>
